@@ -58,3 +58,10 @@ make -c Basetools
 ```
 build -p OvmfPkg/OvmfPkgX64.dsc -t GCC5 -a X64
 ```
+
+
+## How to Run OVMF in Ubuntu
+
+```
+qemu-system-x86_64 -m 4096 -bios bios.bin -nodefaults -display gtk -vga std -drive format=raw,file=fat:rw:/home/chengti/code/ovmf/esp
+```
