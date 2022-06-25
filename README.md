@@ -65,3 +65,13 @@ build -p OvmfPkg/OvmfPkgX64.dsc -t GCC5 -a X64
 ```
 qemu-system-x86_64 -m 4096 -bios bios.bin -nodefaults -display gtk -vga std -drive format=raw,file=fat:rw:/home/chengti/code/ovmf/esp
 ```
+
+## UefiTools build 
+```
+git clone https://github.com/vinxue/UefiToolkitPkg.git
+
+```
+```
+build -p UefiToolkitPkg/UefiPkg.dsc -t GCC5 -a X64
+```
+
